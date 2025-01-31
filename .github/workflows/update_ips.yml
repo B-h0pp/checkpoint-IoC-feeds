@@ -31,3 +31,6 @@ jobs:
           git add expanded_ips.csv
           git commit -m "Update expanded IP list"
           git push
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
