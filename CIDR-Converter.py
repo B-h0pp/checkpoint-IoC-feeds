@@ -22,7 +22,7 @@ for cidr in cidr_list:
 # Save to a new CSV file
 with open(OUTPUT_FILE, "w", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["IP Address"])
+    #writer.writerow(["IP Address"])
     for ip in expanded_ips:
         writer.writerow([ip])
 
